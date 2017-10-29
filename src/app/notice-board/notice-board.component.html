@@ -1,0 +1,10 @@
+<!-- <ul>
+  <li *ngFor="let notice of propertyNotices">{{notice.text}}</li>
+</ul> -->
+<div class="wrapper">
+  <div class="notice-board">
+    <div *ngFor="let notice of propertyNotices;">
+      <app-notice [notice]="notice"></app-notice>
+    </div>
+  </div>
+</div>

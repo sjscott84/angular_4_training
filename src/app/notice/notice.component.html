@@ -1,0 +1,10 @@
+<div [class]="'sticky-note ' + notice.type">
+  <div class="pin"> </div>
+  <div class="text">
+    {{notice.text}}
+  </div>
+  <div class="owner">
+    <div>{{notice.date | date}}</div>
+    {{notice.author}}
+  </div>
+</div>
